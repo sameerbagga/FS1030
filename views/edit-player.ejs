@@ -41,6 +41,21 @@
                         <option>Striker</option>
                     </select>
                 </div>
+                <div class="form-group col-md-6">
+                    <label for="ranking">Ranking</label>
+                    <select id="ranking" name="ranking" class="form-control" required>
+                        <option selected><%= player.ranking %></option>
+                        <option>0-10</option>
+                        <option>10-20</option>
+                        <option>20-50</option>
+                        <option>50-100</option>
+                        <option>100 above</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="playerValue">Player Value</label>
+                    <input type="decimal" class="form-control" name="$value" id="$value" placeholder="$value" value="<%= player.$value %>" required>
+                </div>
             </div>
             <button type="submit" class="btn btn-success float-right">Update Player</button>
         </form>

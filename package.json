@@ -4,7 +4,9 @@
   "description": "building nodejs app with mysql",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,8 +14,19 @@
     "body-parser": "^1.19.0",
     "ejs": "^2.6.1",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.4",
+    "express-fileupload": "^1.1.5",
     "mysql": "^2.17.1",
     "req-flash": "0.0.3"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sameerbagga/FS1030.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sameerbagga/FS1030/issues"
+  },
+  "homepage": "https://github.com/sameerbagga/FS1030#readme"
 }

@@ -11,6 +11,8 @@
                         <th scope="col">Position</th>
                         <th scope="col">Number</th>
                         <th scope="col">Username</th>
+                        <th scope="col">Ranking</th>
+                        <th scope="col">Player Value</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -24,6 +26,8 @@
                             <td><%= player.position %></td>
                             <td><%= player.number %></td>
                             <td>@<%= player.user_name %></td>
+                            <td><%= player.ranking %></td>
+                            <td><%= player.$value %></td>
                             <td>
                                 <a href="/edit/<%= player.id %>" target="_blank" rel="noopener" class="btn btn-sm btn-success">Edit</a>
                                 <a href="/delete/<%= player.id %>" class="btn btn-sm btn-danger">Delete</a>

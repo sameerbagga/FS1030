@@ -36,7 +36,7 @@ Start the app, opens the app at http://localhost:5000
 
 ```
 nodemon app.js
-```
+```nodemon app.js
 
 
 ## MYSQL Script
